@@ -1,0 +1,27 @@
+﻿VERCEL ENVIRONMENT VARIABLES FOR B SOCIO
+
+Required:
+MONGODB_URI=mongodb+srv://USERNAME:PASSWORD@CLUSTER.mongodb.net/b-socio?retryWrites=true&w=majority
+JWT_SECRET=make_a_long_random_secret_here
+ADMIN_EMAIL=youradminemail@example.com
+ADMIN_AGENCY_NAME=B Socio
+NEXT_PUBLIC_APP_NAME=B Socio
+NEXT_PUBLIC_APP_URL=https://bsocio.in
+
+Contact form email:
+CONTACT_RECEIVING_EMAIL=connect@bsocio.in
+RESEND_API_KEY=re_your_real_resend_key_here
+EMAIL_FROM=B Socio <contact@bsocio.in>
+
+Optional future integrations:
+OPENAI_API_KEY=
+META_APP_ID=
+META_APP_SECRET=
+META_REDIRECT_URI=
+RUNWAY_API_KEY=
+
+Important:
+- Do not upload .env or .env.local to GitHub.
+- Add these values in Vercel Project Settings > Environment Variables.
+- MongoDB Atlas must allow Vercel network access, usually 0.0.0.0/0.
+- Resend must verify bsocio.in before EMAIL_FROM can send from contact@bsocio.in.
