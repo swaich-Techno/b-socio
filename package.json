@@ -5,7 +5,7 @@
   "description": "Public B Socio agency website with secure role-based client, team, and super admin portals.",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint app components lib models proxy.js next.config.js tailwind.config.js postcss.config.js eslint.config.mjs"
   },
