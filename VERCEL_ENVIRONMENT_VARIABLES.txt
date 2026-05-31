@@ -1,0 +1,37 @@
+B Socio - Vercel Environment Variables
+
+Add these inside Vercel:
+Project Settings > Environment Variables
+
+Do not upload your real .env or .env.local file to GitHub.
+
+Required for login, dashboards, chats, and MongoDB:
+
+MONGODB_URI=mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@YOUR_CLUSTER.mongodb.net/b-socio?retryWrites=true&w=majority
+JWT_SECRET=make_a_long_private_random_secret_here
+ADMIN_EMAIL=your_owner_email@example.com
+ADMIN_AGENCY_NAME=B Socio
+NEXT_PUBLIC_APP_NAME=B Socio
+NEXT_PUBLIC_APP_URL=https://bsocio.in
+CONTACT_RECEIVING_EMAIL=connect@bsocio.in
+
+Optional email provider variables:
+
+RESEND_API_KEY=
+EMAIL_FROM=B Socio <contact@bsocio.in>
+
+Notes:
+
+1. The public Contact page works immediately with WhatsApp and email links.
+2. Resend is optional. Add it only if you want backend email sending from API routes.
+3. If you use EMAIL_FROM=B Socio <contact@bsocio.in>, verify bsocio.in or contact@bsocio.in inside Resend first.
+4. For MongoDB Atlas, allow Vercel by adding 0.0.0.0/0 in Network Access.
+5. Register first with the same email as ADMIN_EMAIL. That account becomes the owner/admin account.
+
+Future optional API keys:
+
+OPENAI_API_KEY=
+META_APP_ID=
+META_APP_SECRET=
+META_REDIRECT_URI=
+RUNWAY_API_KEY=

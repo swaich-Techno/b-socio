@@ -1,0 +1,53 @@
+B Socio - GitHub Upload Instructions
+
+Upload the contents of this folder to GitHub.
+
+Upload these:
+
+app
+components
+lib
+models
+public
+.env.example
+.gitignore
+eslint.config.mjs
+jsconfig.json
+next.config.js
+package.json
+package-lock.json
+postcss.config.js
+proxy.js
+tailwind.config.js
+README.md
+VERCEL_ENVIRONMENT_VARIABLES.txt
+GITHUB-UPLOAD-INSTRUCTIONS.txt
+
+Do not upload these:
+
+.env
+.env.local
+.next
+node_modules
+.vercel
+any old ZIP files
+netlify.toml
+
+If GitHub or Windows hides .env.example and .gitignore:
+
+1. On GitHub, click Add file.
+2. Click Create new file.
+3. Type the exact file name: .gitignore
+4. Paste the contents from the .gitignore file in this folder.
+5. Do the same for .env.example.
+
+Deployment:
+
+1. Push this folder to GitHub.
+2. Open Vercel and import the GitHub repository.
+3. Choose Framework Preset: Next.js.
+4. Build command: npm run build
+5. Output directory: leave blank.
+6. Add variables from VERCEL_ENVIRONMENT_VARIABLES.txt.
+7. Deploy.
+8. Add the custom domain bsocio.in in Vercel.
